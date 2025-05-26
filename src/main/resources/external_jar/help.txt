@@ -1,0 +1,12 @@
+java -jar external-services-v2.jar
+
+java -jar external-services-v2.jar --server.port=6060
+
+to make a delay in other microservices, just start the service with some delay.
+
+java -jar external-services-v2.jar --server.port=6060 --sec01.delay.response=3000
+
+Sec01:
+
+http://localhost:7070/swagger-ui/
+http://localhost:8080/sec01/product/1
